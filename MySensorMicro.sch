@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -3468,7 +3468,7 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="IC1" library="avr-7" deviceset="MEGA48/88/168" device="-AU" value="MEGA328P-AU"/>
 <part name="C3" library="Discrete" deviceset="CAP" device="-0603" value="4u7"/>
 <part name="SUPPLY1" library="supply2" deviceset="V+" device=""/>
-<part name="IC2" library="microchip" deviceset="25*" device="SN" technology="AA080"/>
+<part name="IC2" library="microchip" deviceset="25*" device="SN" technology="AA080" value="AT25DF512C-SSHN-B"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="JP1" library="pinhead" deviceset="PINHD-2X4" device="" value="Radio"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
