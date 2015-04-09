@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -3473,10 +3473,10 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="JP1" library="pinhead" deviceset="PINHD-2X4" device="" value="Radio"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
-<part name="JP3" library="avr-7" deviceset="AVR-ISP-6" device="VERT"/>
+<part name="JP3" library="avr-7" deviceset="AVR-ISP-6" device="VERT" value="N/M"/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="C2" library="Discrete" deviceset="CAP" device="-0402" value="100n"/>
-<part name="Q1" library="Discrete" deviceset="CRYSTAL*" device="-306010055" value="32768hz"/>
+<part name="Q1" library="Discrete" deviceset="CRYSTAL*" device="-306010055" value="N/M"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY3" library="supply2" deviceset="V+" device=""/>
 <part name="SUPPLY4" library="supply2" deviceset="V+" device=""/>
@@ -3492,10 +3492,10 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="SUPPLY9" library="supply2" deviceset="V+" device=""/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="C4" library="Discrete" deviceset="CAP" device="-0402" value="100n"/>
-<part name="JP2" library="SparkFun-Connectors" deviceset="M06" device="NO_SILK_FEMALE_PTH"/>
+<part name="JP2" library="SparkFun-Connectors" deviceset="M06" device="NO_SILK_FEMALE_PTH" value="N/M"/>
 <part name="C5" library="Discrete" deviceset="CAP" device="-0402" value="100n"/>
-<part name="JP4" library="SparkFun-Connectors" deviceset="M05" device="NO_SILK"/>
-<part name="JP5" library="SparkFun-Connectors" deviceset="M06" device="NO_SILK_FEMALE_PTH"/>
+<part name="JP4" library="SparkFun-Connectors" deviceset="M05" device="NO_SILK" value="N/M"/>
+<part name="JP5" library="SparkFun-Connectors" deviceset="M06" device="NO_SILK_FEMALE_PTH" value="N/M"/>
 <part name="R3" library="Discrete" deviceset="R*" device="-0402" value="10k"/>
 <part name="SUPPLY2" library="supply2" deviceset="V+" device=""/>
 <part name="C6" library="Discrete" deviceset="CAP" device="-0402" value="100n"/>
@@ -3503,6 +3503,9 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="IC4" library="Sensor" deviceset="ATSHA204A" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY7" library="supply2" deviceset="V+" device=""/>
+<part name="R5" library="Discrete" deviceset="R*" device="-0402" value="4k7"/>
+<part name="R6" library="Discrete" deviceset="R*" device="-0402" value="4k7"/>
+<part name="SUPPLY10" library="supply2" deviceset="V+" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3553,6 +3556,9 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="IC4" gate="U1" x="172.72" y="125.73"/>
 <instance part="GND2" gate="1" x="161.29" y="118.11"/>
 <instance part="SUPPLY7" gate="1" x="182.88" y="134.62"/>
+<instance part="R5" gate="R" x="147.32" y="38.1" rot="R90"/>
+<instance part="R6" gate="R" x="185.42" y="99.06" rot="R90"/>
+<instance part="SUPPLY10" gate="1" x="185.42" y="109.22"/>
 </instances>
 <busses>
 </busses>
@@ -3722,6 +3728,9 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="154.94" y1="43.18" x2="154.94" y2="45.72" width="0.1524" layer="91"/>
 <junction x="154.94" y="43.18"/>
 <pinref part="SUPPLY6" gate="1" pin="V+"/>
+<wire x1="147.32" y1="43.18" x2="154.94" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="R5" gate="R" pin="2"/>
+<wire x1="147.32" y1="41.91" x2="147.32" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R2" gate="R" pin="2"/>
@@ -3758,6 +3767,11 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pinref part="IC4" gate="U1" pin="VCC"/>
 <pinref part="SUPPLY7" gate="1" pin="V+"/>
 <wire x1="182.88" y1="128.27" x2="182.88" y2="132.08" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R6" gate="R" pin="2"/>
+<pinref part="SUPPLY10" gate="1" pin="V+"/>
+<wire x1="185.42" y1="102.87" x2="185.42" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="D4" class="0">
@@ -3919,8 +3933,12 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </segment>
 <segment>
 <pinref part="JP1" gate="A" pin="4"/>
-<wire x1="175.26" y1="93.98" x2="187.96" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="93.98" x2="185.42" y2="93.98" width="0.1524" layer="91"/>
 <label x="187.96" y="93.98" size="1.778" layer="95" xref="yes"/>
+<pinref part="R6" gate="R" pin="1"/>
+<wire x1="185.42" y1="93.98" x2="187.96" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="95.25" x2="185.42" y2="93.98" width="0.1524" layer="91"/>
+<junction x="185.42" y="93.98"/>
 </segment>
 </net>
 <net name="D9" class="0">
@@ -3943,8 +3961,12 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="!CS"/>
-<wire x1="157.48" y1="33.02" x2="144.78" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="33.02" x2="147.32" y2="33.02" width="0.1524" layer="91"/>
 <label x="144.78" y="33.02" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="R5" gate="R" pin="1"/>
+<wire x1="147.32" y1="33.02" x2="144.78" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="34.29" x2="147.32" y2="33.02" width="0.1524" layer="91"/>
+<junction x="147.32" y="33.02"/>
 </segment>
 </net>
 <net name="D7" class="0">
