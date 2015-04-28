@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -3503,8 +3503,8 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="IC4" library="Sensor" deviceset="ATSHA204A" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY7" library="supply2" deviceset="V+" device=""/>
-<part name="R5" library="Discrete" deviceset="R*" device="-0402" value="4k7"/>
-<part name="R6" library="Discrete" deviceset="R*" device="-0402" value="4k7"/>
+<part name="R5" library="Discrete" deviceset="R*" device="-0402" value="56k"/>
+<part name="R6" library="Discrete" deviceset="R*" device="-0402" value="56k"/>
 <part name="SUPPLY10" library="supply2" deviceset="V+" device=""/>
 </parts>
 <sheets>
