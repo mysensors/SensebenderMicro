@@ -25,5 +25,5 @@ The following pins are available on headers:
 *Please note*
 
 MAXIMUM allowed supply voltage is 3.5V, anything above this WILL fry both
-radio and NRF24 radio module. There is NO voltage regulator on board (To keep
+Si7021, flash and NRF24 radio module. There is NO voltage regulator on board (To keep
 supply current down to a minimum)
