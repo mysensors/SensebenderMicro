@@ -1,0 +1,120 @@
+commit 12a186989da0a213372178e72b3d47e3f46b5c39
+Author: Thomas Mørch <thomas@bowmo.dk>
+Date:   Sun Mar 20 11:03:00 2016 +0100
+
+    Added license files
+
+commit 9c6fbff83cbd732324b70228c96c489922747ecb
+Author: Thomas Mørch <thomas@bowmo.dk>
+Date:   Sun Mar 20 08:44:23 2016 +0100
+
+    Corrected readme file
+
+commit 1925091e317b5627f6f4a252ab48d5a810d345f4
+Author: Thomas Mørch <thomas@bowmo.dk>
+Date:   Sun Mar 20 08:39:12 2016 +0100
+
+    Added BOM file
+
+commit ceea0fcb51a1bdef3b00939cef161c32a42b2b1d
+Merge: b7491d6 e9a2936
+Author: Thomas Mørch <tbowmo@users.noreply.github.com>
+Date:   Mon Mar 14 10:12:15 2016 +0100
+
+    Merge pull request #2 from AhmedAdelHosni/master
+    
+    Updated component values on R5/R6
+
+commit e9a29362c966621333c1182c153e39e1da846b3a
+Author: AhmedAdelHosni <ahmed.adel.hosni@gmail.com>
+Date:   Sun Mar 13 22:54:48 2016 +0200
+
+    Updated component values on R5/R6
+    
+    Fix error > Board and schematic are not consistent! No
+    forward-/backannotation will be performed!
+    Changes are done using Eagle 7.3.0
+
+commit b7491d6ed4ddf0a060c874108f0a5083b8e7cc7f
+Merge: 702167a cc55a6e
+Author: Henrik Ekblad <henrik.ekblad@gmail.com>
+Date:   Mon Jun 8 21:23:42 2015 +0200
+
+    Merge pull request #1 from tbowmo/master
+    
+    Merge latest
+
+commit cc55a6e985fc09cfe503e1d9673b94dc9aa92421
+Merge: 7a72637 702167a
+Author: Thomas Mørch <tbowmo@users.noreply.github.com>
+Date:   Mon Jun 8 21:17:59 2015 +0200
+
+    Merge pull request #1 from mysensors/master
+    
+    Updated name
+
+commit 7a72637da3a2cb4125ce89c6f3736f20ab1a45a8
+Author: Thomas Mørch <thomas@bowmo.dk>
+Date:   Mon Jun 8 21:03:33 2015 +0200
+
+    Added pdf of schematic
+
+commit 702167a173d682caa59032d1dbbb1c58191e162d
+Author: Henrik Ekblad <henrik.ekblad@gmail.com>
+Date:   Sun May 3 14:57:36 2015 +0200
+
+    Updated name
+
+commit 6f9d441785c2c0ee8364f5e353a31250fb7f7e91
+Author: Thomas Mørch <thomas@bowmo.dk>
+Date:   Tue Apr 28 20:54:06 2015 +0200
+
+    Updated component values on R5/R6
+
+commit a9658f6beb4978a6db89c47790608973ae35b67d
+Author: Thomas Mørch <thomas@bowmo.dk>
+Date:   Thu Apr 9 19:41:53 2015 +0200
+
+    Updated with pullup on both CSN on NRF module, and CE on external flash
+
+commit 80aa3bc2c3508a25c7a4644aab8bf5bd5ac3c78c
+Author: Thomas Mørch <thomas@bowmo.dk>
+Date:   Wed Apr 1 10:21:22 2015 +0200
+
+    Updated board layout
+
+commit 79ec694619c472c08962edfc25b17c7105b51f81
+Author: Thomas Mørch <thomas@bowmo.dk>
+Date:   Sun Mar 1 11:02:13 2015 +0100
+
+    Updated part number for external flash
+
+commit 2e32f2f1a14e2fc806389f1ae394f1060c63ea62
+Author: Thomas Mørch <thomas@bowmo.dk>
+Date:   Wed Jan 28 19:46:06 2015 +0100
+
+    Updated with graphics, sendt to dirtypcbs.com for manufacturing
+
+commit a41e8fde1bd1568f0d2d8a725a92187eeb6135e8
+Author: Thomas Mørch <thomas@bowmo.dk>
+Date:   Sun Jan 25 20:23:07 2015 +0100
+
+    Cleaned up routing here and there, moved crystal slightly..
+
+commit 8b9f0619e0f77194aeeb1ce134e5cf3d9e13da76
+Author: Thomas Mørch <thomas@bowmo.dk>
+Date:   Sun Jan 25 18:12:39 2015 +0100
+
+    Updated README file
+
+commit 08fb1947a0c60a256ce0a585195b0592fe95ff87
+Author: Thomas Mørch <thomas@bowmo.dk>
+Date:   Sun Jan 25 15:02:41 2015 +0100
+
+    Updated readme file
+
+commit 243aa970c42215cd80159821185e0518ee0d3b80
+Author: Thomas Mørch <thomas@bowmo.dk>
+Date:   Sun Jan 25 14:55:38 2015 +0100
+
+    Initial commit
