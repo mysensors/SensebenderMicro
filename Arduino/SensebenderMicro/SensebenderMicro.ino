@@ -46,7 +46,7 @@
 //#define MY_DEBUG 
 
 // Define a static node address, remove if you want auto address assignment
-//#deine MY_NODE_ID 3
+//#define MY_NODE_ID 3
 
 // Enable and select radio type attached
 #define MY_RADIO_NRF24
