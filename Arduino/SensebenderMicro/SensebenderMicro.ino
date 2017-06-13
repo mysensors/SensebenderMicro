@@ -200,13 +200,6 @@ void loop() {
   sendBattery ++;
   bool forceTransmit = false;
   transmission_occured = false;
-#ifndef MY_OTA_FIRMWARE_FEATURE
-  if ((measureCount == 5) && highfreq) 
-  {
-    clock_prescale_set(clock_div_8); // Switch to 1Mhz for the reminder of the sketch, save power.
-    highfreq = false;
-  } 
-#endif
   
   if (measureCount > FORCE_TRANSMIT_INTERVAL) { // force a transmission
     forceTransmit = true; 
