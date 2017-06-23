@@ -208,7 +208,7 @@ void loop() {
   } 
 #endif
   
-  if (measureCount > FORCE_TRANSMIT_INTERVAL) { // force a transmission
+  if (measureCount >= FORCE_TRANSMIT_INTERVAL) { // force a transmission
     forceTransmit = true; 
     measureCount = 0;
   }
@@ -252,8 +252,8 @@ void sendTempHumidityMeasurements(bool force)
   Serial.print(F("HumDiff  :"));Serial.println(diffHum); 
 
   if (isnan(diffHum)) tx = true; 
-  if (diffTemp > TEMP_TRANSMIT_THRESHOLD) tx = true;
-  if (diffHum > HUMI_TRANSMIT_THRESHOLD) tx = true;
+  if (diffTemp >= TEMP_TRANSMIT_THRESHOLD) tx = true;
+  if (diffHum >= HUMI_TRANSMIT_THRESHOLD) tx = true;
 
   if (tx) {
     measureCount = 0;
