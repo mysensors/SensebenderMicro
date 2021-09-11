@@ -184,7 +184,7 @@ void presentation()  {
   present(CHILD_ID_HUM,S_HUM);
     
 #ifdef BATT_SENSOR
-  present(BATT_SENSOR, S_POWER);
+  present(BATT_SENSOR, S_MULTIMETER);
 #endif
 }
 
